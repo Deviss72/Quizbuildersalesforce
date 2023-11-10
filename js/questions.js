@@ -1641,7 +1641,7 @@ let questions = [
   {
     numb: 125,
     question: "The administrator at Aw Computing wants Account Details, related list and chatter feeds to each appear on separate tabs when reviewing an account. Which type of page should the administrator create?",
-    answer: ["Lightning record page"],
+    answer: ["Lightning record page."],
     options: [
       "Lightning app page.",
       "Lightning page Tab.",
