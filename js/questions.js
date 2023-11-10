@@ -1612,7 +1612,7 @@ let questions = [
   
   {
     numb: 123,
-    question: "The VP of Sales at Cloud Kicks is receiving an error message that prevents them form saving an Opportunity. The administrator attempted the same edit without receiving an error. How can the administrator validate the error the user is receiving?",
+    question: "The VP of Sales at Cloud Kicks is receiving an error message that prevents them from saving an Opportunity. The administrator attempted the same edit without receiving an error. How can the administrator validate the error the user is receiving?",
     answer: ["Log in as the user"],
     options: [
       "Edit the page layout.",
