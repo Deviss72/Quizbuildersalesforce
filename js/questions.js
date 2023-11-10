@@ -15,14 +15,14 @@ let questions = [
   {
     numb: 2,
     question: "An administrator has been asked to update a flow that was created as part of a recent update. When the administrator opens the flow for editing, the Flow toolbox offers only four elements: Assignment, Decision, Get Records, and Loop. What would cause this?",
-    answer: ["The version of the flow is inactive.", "The flow is a before save flow."],
+    answer: ["The flow is a before save flow."],
     options: [
       "The flow is a screen flow.",
       "The version of the flow is inactive.",
       "The flow is a before save flow.",
       "The version of the flow is activated."
     ],
-    nb_good_answer: 2
+    nb_good_answer: 1
   },
   
   {
@@ -508,7 +508,7 @@ let questions = [
   {
     numb: 40,
     question: "The sales manager at Cloud Kicks wants to set up a business process where opportunity discounts over 30% need to be approved by the VP of sales. Any discounts above 10% need to be approved by the user’s manager. The administrator has been tasked with creating an approval process. Which are two considerations the administrator needs to review before setting up this approval process? Choose 2 answers",
-    answer: ["Create a custom Discount field on the opportunity to capture the discount amount", "Allow the submitter to choose the approver manually"],
+    answer: ["Create a custom Discount field on the opportunity to capture the discount amount", "Populate the Manager standard field on the sales users’ User Detail page"],
     options: [
       "Create a custom Discount field on the opportunity to capture the discount amount",
       "Populate the Manager standard field on the sales users’ User Detail page",
@@ -714,7 +714,7 @@ let questions = [
     numb: 54,
     question: "A user at Cloud Kicks is having issues logging in to Salesforce. The user asks the administrator to reset their password. Which two options should the administrator consider when resetting the user’s password? Choose 2 answers",
     answer: [
-      "Resetting the password will change the user’s password policy.",
+      "Resetting a locked-out user’s password automatically unlocks the user’s account.",
       "After resetting a password, the user may be required to activate their device to successfully log in to Salesforce."
     ],
     options: [
@@ -905,7 +905,7 @@ let questions = [
   {
     numb: 68,
     question: "The administrator at Ursa Major Solar needs to make sure the unassigned cases from VP customers get transferred to the appropriate service representative within 5 hours. VIP Customers have access to support 24 hours a day. How should this be configured?",
-    answer: ["Business Hours."],
+    answer: ["Assignment Rules."],
     options: [
       "Assignment Rules.",
       "Business Hours.",
@@ -968,6 +968,85 @@ let questions = [
       "Make the field required and move it to the top of the page."
     ],
     nb_good_answer: 1
+  },
+  {
+    numb: 73,
+    question: "A team of support users at Cloud Kicks is helping inside sales reps make follow-up calls to prospects that filled out an interest online. The team currently does not have access to the lead object. How should an administrator provide proper access?",
+    answer: ["Configure permission sets."],
+    options: [
+      "Create a new profile",
+      "Configure permission sets.",
+      "Assign a new role.",
+      "Set Up Manual Sharing"
+    ],
+    nb_good_answer: 1
+  },
+  {
+    numb: 74,
+    question: "An administrator supporting a global team of Salesforce users has been asked to configure company settings. Choose 2 options",
+    answer: ["Currency Locale", "Default Language"],
+    options: ["Currency Locale", "Default Language", "Password Policy", "Login Hours"],
+    nb_good_answer: 2
+  },
+  {
+    numb: 75,
+    question: "Which item is available in a Lightning App where visibility is limited to the Salesforce Mobile App?",
+    answer: ["Utility Bar"],
+    options: ["Today", "Favorites", "Utility Bar", "Home Page"],
+    nb_good_answer: 1
+  },
+  {
+    numb: 76,
+    question: "Ursa Major Solar wants to know which of its marketing efforts are helping the team win Opportunities. What should an administrator configure to provide these insights?",
+    answer: ["Campaign Influence"],
+    options: ["Campaign Hierarchy", "Campaign Influence", "Map Custom Lead Fields", "List Email Activities"],
+    nb_good_answer: 1
+  },
+  {
+    numb: 77,
+    question: "Ursa Major Solar uses two different page layouts for Account records. One page layout reflects the fields related to customer accounts and another page layout includes fields for partner accounts. The administrator has assigned the customer account page layout to sales and support users and the partner account layout to the partner management team. What should the administrator configure to meet this requirement?",
+    answer: ["Create one record type for customer accounts and one record type for partner accounts"],
+    options: [
+      "Use a public group and a criteria-based sharing rule to share customer accounts with the partner team.",
+      "Add members of the partner management team to the default Account team for the customer accounts.",
+      "Grant create, read, edit and delete access to customer accounts on the partner team profile.",
+      "Create one record type for customer accounts and one record type for partner accounts"
+    ],
+    nb_good_answer: 1
+  },
+  {
+    numb: 78,
+    question: "User at Cloud Kicks want to see information more useful for their role on the Case page. How should an administrator make the pages more dynamic and easier to use?",
+    answer: ["Add Component visibility filters to the Components"],
+    options: [
+      "Add Component visibility filters to the Components",
+      "Remove fields from the record details component",
+      "Delete the extra component from the page",
+      "Include more tab components with filters"
+    ],
+    nb_good_answer: 1
+  },
+  {
+    numb: 79,
+    question: "Universal Containers (UC) customers have provided feedback that their support cases are not being responded to quickly enough. UC wants to send all unassigned Cases that have been open for more than 2 hours to an urgent Case queue and alert the support manager. Which feature should an administrator configure to meet this requirement?",
+    answer: ["Case Escalation Rules"],
+    options: ["Case Scheduled Reports", "Case Dashboard Refreshes", "Case Escalation Rules", "Case Assignment Rules"],
+    nb_good_answer: 1
+  },
+  {
+    numb: 80,
+    question: "Cloud Kicks has created a screen flow for their sales team to use when they add new leads. The screen flow collects name, email and shoe preference. Which two things should the administrator do to display the screen flow? Choose 2 answers",
+    answer: [
+      "Create a tab and add the screen flow to the page",
+      "Use a flow element and add the screen flow to the record page"
+    ],
+    options: [
+      "Create a tab and add the screen flow to the page",
+      "Use a flow element and add the screen flow to the record page",
+      "Add the flow in the utility bar of the console",
+      "Install an app from the AppExchange"
+    ],
+    nb_good_answer: 2
   },
   {
     numb: 81,
@@ -1064,18 +1143,7 @@ let questions = [
   },
   
   
-  {
-    numb: 73,
-    question: "A team of support users at Cloud Kicks is helping inside sales reps make follow-up calls to prospects that filled out an interest online. The team currently does not have access to the lead object. How should an administrator provide proper access?",
-    answer: ["Configure permission sets."],
-    options: [
-      "Create a new profile",
-      "Configure permission sets.",
-      "Assign a new role.",
-      "Set Up Manual Sharing"
-    ],
-    nb_good_answer: 1
-  },
+
   {
     numb: 88,
     question: "Sales reps miss key fields when filling out an opportunity record through the process. Reps need to update an opportunity to Won and to be unable to enter the previous stage. Which three options should the administrator use to address this need? Choose Three answers",
@@ -1795,7 +1863,7 @@ let questions = [
   {
     numb: 142,
     question: "New leads need to be routed to the correct Sales person based on the lead address. Which feature should the administrator use to meet this requirement?",
-    answer: ["Lead Assignment Rule"],
+    answer: ["Use lead assignment rule"],
     options: [
       "Configure validation rule",
       "Use lead assignment rule",
@@ -1834,7 +1902,7 @@ let questions = [
   {
     numb: 145,
     question: "Which three items are available in the mobile navigation menu? Choose 2 answers",
-    answer: ["Lightning Home Page", "Dashboards"],
+    answer: ["Chatter", "Dashboards"],
     options: [
       "Lightning App Pages",
       "Lightning Home Page",
@@ -1848,7 +1916,7 @@ let questions = [
   {
     numb: 146,
     question: "Support agents at Cloud Kicks are spending too much time finding resources to solve cases. The agents need a more efficient way to find documentation and similar cases from the Case page layout. How should an administrator meet this requirement?",
-    answer: ["Configure Knowledge with articles and data categories"],
+    answer: ["Configure Knowledge with articles and data categories."],
     options: [
       "Create a custom object to capture popular case resolutions.",
       "Use an interview flow to capture Case details.",
@@ -1907,7 +1975,7 @@ let questions = [
   {
     numb: 151,
     question: "The administrator at cloud kicks has been ask to change the company’s Shoe style field to prevent users from selecting more than one style on a record. Which two steps should an administrator do to accomplish this? Choose 2 answers",
-    answer: ["Select the “Choose only one value “checkbox on the pick list field.", "Change the field type from a multi-select picklist field to a picklist field."],
+    answer: ["Back-up the Shoe Style values in existing records.", "Change the field type from a multi-select picklist field to a picklist field."],
     options: [
       "Reactivate the appropriate Shoe Style values after the field type changes.",
       "Select the “Choose only one value “checkbox on the pick list field.",
@@ -2102,7 +2170,7 @@ let questions = [
   {
     numb: 168,
     question: "The administrator at Ursa Major Solar has created a custom report type and built a report for the sales operation team. However, none of the users are able to access the report. Which two options could cause this issue?",
-    answer: ["The user’s profile is missing view access.", "The report is saved in a private folder."],
+    answer: ["The custom report type is in development.", "The report is saved in a private folder."],
     options: [
       "The custom report type is in development.",
       "The user’s profile is missing view access.",
