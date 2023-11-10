@@ -783,7 +783,7 @@ let questions = [
   {
     numb: 59,
     question: "The support manager at Cloud Kicks wants to respond to customers as quickly as possible. They have requested that the response include the top five troubleshooting tips that could help solve the customer’s issue. What should the administrator suggest to meet these requirements?",
-    answer: ["Knowledge Articles"],
+    answer: ["Auto-Response Rules"],
     options: [
       "Auto-Response Rules",
       "Email Alerts",
