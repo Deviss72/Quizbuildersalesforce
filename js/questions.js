@@ -197,7 +197,7 @@ let questions = [
   
   {
     numb: 16,
-    question: "The administrator at Cloud Kicks has been asked to replace two old workflow rules that are doing simple field updated when a lead is created to improve processing time. What tool should the administrator use to replace the workflow rules?",
+    question: "The administrator at Cloud Kicks has been asked to replace two old workflow rules that are doing a simple field update when a lead is created to improve processing time. What tool should the administrator use to replace the workflow rules?",
     answer: ["Before Save Flow"],
     options: [
       "Quick Action Flow",
@@ -288,9 +288,9 @@ let questions = [
   {
     numb: 23,
     question: "Northern Trail Outfitters wants to calculate how much revenue has been generated for each of its marketing campaigns. How should an administrator deliver this information?",
-    answer: ["Design a standard Campaign report and add the value Won Opportunities in Campaign field"],
+    answer: ["Design a standard Campaign report and add the value Won Opportunities in the Campaign field"],
     options: [
-      "Design a standard Campaign report and add the value Won Opportunities in Campaign field",
+      "Design a standard Campaign report and add the value Won Opportunities in the Campaign field",
       "Perform periodic data job to update campaign records",
       "Create a roll-up summary field on Opportunity to Campaign",
       "Add a Total Value Field on campaign and use a workflow rule to update the value when an opportunity is won"
@@ -430,9 +430,9 @@ let questions = [
   {
     numb: 34,
     question: "The Sales director at Cloud Kicks wants to be able to predict upcoming revenue in the next several fiscal quarters so they can set goals and benchmark how reps are performing. Which two features should the administrator configure? Choose 2 answers",
-    answer: ["Sales Quotes","Forecasting"],
+    answer: ["Sales Quota","Forecasting"],
     options: [
-      "Sales Quotes",
+      "Sales Quota",
       "Opportunity List View",
       "Forecasting",
       "Opportunity Stages"
@@ -1247,7 +1247,7 @@ let questions = [
   
   {
     numb: 96,
-    question: "Universal Containers (UC) has a queue that is used for managing tasks that need to be worked by the UC customer support team. The same team will now be working some of UC's Cases. Which two options should the administrator use to help the support team? Choose 2 answers",
+    question: "Universal Containers (UC) has a queue that is used for managing tasks that need to be worked by the UC customer support team. The same team will now be working on some of UC's Cases. Which two options should the administrator use to help the support team? Choose 2 answers",
     answer: [
       "Use assignment rules to set the queue as the owner of the case.",
       "Add Cases to the existing queue as an available object."
@@ -2156,7 +2156,7 @@ let questions = [
   
   {
     numb: 167,
-    question: "Northern trail Outfitter wants to use contract hierarchy in its or to display contact association. What should the administrator take into consideration regarding the contact hierarchy?",
+    question: "Northern trail Outfitter wants to use contact hierarchy in its or to display contact association. What should the administrator take into consideration regarding the contact hierarchy?",
     answer: ["Sharing settings are ignored by contacts displayed in the Contact Hierarchy."],
     options: [
       "Contacts displays in the contact hierarchy are limited to record-level access by User.",
@@ -2391,7 +2391,7 @@ let questions = [
   },
   {
     numb: 185,
-    question: "The Call centre manager in Ursa Major Solar wants to provide agents with a case dashboard that can be drilled down by case origin, status and owner. What should an Administrator add to the dashboard to fulfil the request?",
+    question: "The Call center manager in Ursa Major Solar wants to provide agents with a case dashboard that can be drilled down by case origin, status and owner. What should an Administrator add to the dashboard to fulfil the request?",
     answer: ["Dashboard Filter"],
     options: [
       "Dashboard Filter",
