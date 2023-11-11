@@ -991,7 +991,7 @@ let questions = [
   {
     numb: 75,
     question: "Which item is available in a Lightning App where visibility is limited to the Salesforce Mobile App?",
-    answer: ["Utility Bar"],
+    answer: ["Home Page"],
     options: ["Today", "Favorites", "Utility Bar", "Home Page"],
     nb_good_answer: 1
   },
@@ -2459,7 +2459,7 @@ let questions = [
     question: "The Administrator at Universal Container wants to add branding to salesforce. Which two considerations should the administrator keep in mind?",
     answer: [
       "Only one theme can be active at a time, and a theme applies to the entire org.",
-      "Up to 150 custom themes can be created, modified, or cloned from the built-in themes."
+      "Chatter external users see the built-in Lightning theme only."
     ],
     options: [
       "Only one theme can be active at a time, and a theme applies to the entire org.",
