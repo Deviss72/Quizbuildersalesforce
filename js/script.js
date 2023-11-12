@@ -115,24 +115,38 @@ function selectFromQuestions() {
     // return ids;
 }
 
-// getting questions and options from array
+// Shuffle function
+function shuffle(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+}
+
 function showQuetions(index){
     const que_text = document.querySelector(".que_text");
 
-    //creating a new span and div tag for question and option and passing the value using array index
+    // Creating a copy of the options array to avoid modifying the original array
+    let optionsCopy = [...selectedQuestions[index].options];
+
+    // Shuffle the options
+    shuffle(optionsCopy);
+
+    // Creating a new span and div tag for question and option and passing the value using array index
     let que_tag = '<span>'+ selectedQuestions[index].numb + ". " + selectedQuestions[index].question +'</span><br/><em>' + selectedQuestions[index].nb_good_answer + " bonnes réponses attendues.</em>";
-    let option_tag = '<div class="option"><span>'+ selectedQuestions[index].options[4] +'</span></div>'
-    + '<div class="option"><span>'+ selectedQuestions[index].options[1] +'</span></div>'
-    + '<div class="option"><span>'+ selectedQuestions[index].options[0] +'</span></div>'
-    + '<div class="option"><span>'+ selectedQuestions[index].options[3] +'</span></div>'
-    + '<div class="option"><span>'+ selectedQuestions[index].options[2] +'</span></div>';
-    que_text.innerHTML = que_tag; //adding new span tag inside que_tag
-    option_list.innerHTML = option_tag; //adding new div tag inside option_tag
-    
+    let option_tag = '<div class="option"><span>'+ optionsCopy[0] +'</span></div>'
+        + '<div class="option"><span>'+ optionsCopy[1] +'</span></div>'
+        + '<div class="option"><span>'+ optionsCopy[2] +'</span></div>'
+        + '<div class="option"><span>'+ optionsCopy[3] +'</span></div>'
+        + '<div class="option"><span>'+ optionsCopy[4] +'</span></div>';
+
+    que_text.innerHTML = que_tag; // Adding new span tag inside que_tag
+    option_list.innerHTML = option_tag; // Adding new div tag inside option_tag
+
     const option = option_list.querySelectorAll(".option");
 
-    // set onclick attribute to all available options
-    for(i=0; i < option.length; i++){
+    // Set onclick attribute to all available options
+    for(let i = 0; i < option.length; i++){
         option[i].setAttribute("onclick", "optionSelected(this)");
     }
 }
