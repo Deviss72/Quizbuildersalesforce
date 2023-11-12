@@ -1901,7 +1901,7 @@ let questions = [
   
   {
     numb: 145,
-    question: "Which three items are available in the mobile navigation menu? Choose 2 answers",
+    question: "Which two items are available in the mobile navigation menu? Choose 2 answers",
     answer: ["Chatter", "Dashboards"],
     options: [
       "Lightning App Pages",
