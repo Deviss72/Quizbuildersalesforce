@@ -121,11 +121,11 @@ function showQuetions(index){
 
     //creating a new span and div tag for question and option and passing the value using array index
     let que_tag = '<span>'+ selectedQuestions[index].numb + ". " + selectedQuestions[index].question +'</span><br/><em>' + selectedQuestions[index].nb_good_answer + " bonnes réponses attendues.</em>";
-    let option_tag = '<div class="option"><span>'+ selectedQuestions[index].options[0] +'</span></div>'
+    let option_tag = '<div class="option"><span>'+ selectedQuestions[index].options[4] +'</span></div>'
     + '<div class="option"><span>'+ selectedQuestions[index].options[1] +'</span></div>'
-    + '<div class="option"><span>'+ selectedQuestions[index].options[2] +'</span></div>'
+    + '<div class="option"><span>'+ selectedQuestions[index].options[0] +'</span></div>'
     + '<div class="option"><span>'+ selectedQuestions[index].options[3] +'</span></div>'
-    + '<div class="option"><span>'+ selectedQuestions[index].options[4] +'</span></div>';
+    + '<div class="option"><span>'+ selectedQuestions[index].options[2] +'</span></div>';
     que_text.innerHTML = que_tag; //adding new span tag inside que_tag
     option_list.innerHTML = option_tag; //adding new div tag inside option_tag
     
