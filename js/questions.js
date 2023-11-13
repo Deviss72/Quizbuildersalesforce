@@ -1068,7 +1068,7 @@ let questions = [
     options: [
       "Data Export Wizard.",
       "Data Import Wizard.",
-      "Data Export Wizard.",
+      "Data Export.",
       "Data Loader."
     ],
     nb_good_answer: 1
