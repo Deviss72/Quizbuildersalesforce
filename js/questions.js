@@ -1571,7 +1571,7 @@ let questions = [
   {
     numb: 120,
     question: "Cloud Kicks want to have consistency when communicating with customers on cases. The company has requested messages to be sent in an email channel with categories to help search for the proper message. Which Solution Should the administrator suggest to meet this requirement?",
-    answer: ["Prebuilt Auto-Responses."],
+    answer: ["Prebuilt Quick Texts"],
     options: [
       "Prebuilt Quick Texts",
       "Prebuilt Email Templates.",
