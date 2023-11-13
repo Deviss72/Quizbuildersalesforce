@@ -2136,7 +2136,7 @@ let questions = [
   {
     numb: 165,
     question: "The administrator at Cloud kicks deleted a custom field but realized there is a business unit that still uses the field. What should an administrator take into consideration when undeleting the field?",
-    answer: ["The field needs to be restored from the recycle bin."],
+    answer: ["The field history will remain deleted."],
     options: [
       "The field needs to be re-added to reports.",
       "The field history will remain deleted.",
