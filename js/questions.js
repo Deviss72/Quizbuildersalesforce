@@ -2229,7 +2229,7 @@ let questions = [
   {
     numb: 173,
     question: "The Cloud kicks sales manager wants to boost productivity by providing insights at the start of each day. Which three sales-specific standard Lightning components should the administrator add to the homepage to meet this requirement?",
-    answer: ["Activities", "Key Deals", "Performance chart"],
+    answer: ["Activities", "Key Deals", "Assistant"],
     options: [
       "Activities",
       "Path",
