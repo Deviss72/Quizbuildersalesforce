@@ -959,8 +959,8 @@ let questions = [
   
   {
     numb: 72,
-    question: "An administrator creates a custom text area field on the Account object and adds it to the service team's page layout. The services team manager loves the addition of this field and wants it to appear in the highlights panel so that the services reps can quickly find it when on the Account Page. How should the administrator accomplish this?",
-    answer: ["From the page layout editor, select the field to the highlights panel."],
+    question: "An administrator Creates a custom text field on the Account object and adds it to the service team's page layout. The services team manager loves the addition of this field and wants it to appear in the highlights panel so that the services reps can quickly find it when on the Account Page.",
+    answer: ["In the Account object manager, create a custom compact layout."],
     options: [
       "Create a new page layout and a new section titled highlights panel.",
       "In the Account object manager, create a custom compact layout.",
