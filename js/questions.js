@@ -1584,7 +1584,7 @@ let questions = [
   {
     numb: 121,
     question: "The administrator at Clod Kicks updated the custom object Event to include a lookup field to the primary contact for the event. When running an event report, They want to reference fields from the associated contact record. What should the administrator do to pull contact fields into the Custom report?",
-    answer: ["Create a new report type with event as the primary object and Contact as a related object."],
+    answer: ["Edit the custom Event report type and add fields related via lookup."],
     options: [
       "Configure formula fields on event to populate contact information",
       "Edit the custom Event report type and add fields related via lookup.",
